@@ -1,0 +1,224 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:#fff;
+    font-family: system-ui;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+}
+main{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.planet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.planet img{
+    width: 160%;
+}
+.planet .title{
+    font-size: 50px;
+    background-color: #25995C;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+.description{
+    margin-left: 80px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description .title-description{
+    text-align: center;
+    margin-bottom: 4rem;
+    background-color: #CDDA7E;
+    color: black;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 80px;
+    border-radius: 10px;
+
+}
+
+.description .part-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal width columns */
+    gap: 1rem;
+}
+.characteristic{
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+}
+.tittle-info{
+    font-size: 28px;
+    color: #fff;
+}
+.info_characteristic{
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    background-color: #CDDA7E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.end-main{
+    margin-top: 6rem;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.end-main .btn_home{
+    border: none;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #D83933;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn_home:hover{
+    transform: scale(1.1);
+    transition: 1s all;
+}
+
+
+
+
+@media (max-width: 950px) {
+    main{
+        margin-top: 5rem;
+        display: flex;
+        
+        flex-direction: column;
+    }
+    .description{
+        width: 100%;
+        margin-left:0 ;
+    }
+    .planet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .planet .title{
+        font-size: 4rem;
+        background-color: #25995C;
+        padding: 20px;
+        width: 80%;
+        text-align: center;
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+    .planet img{
+        width: 100%;
+    }
+    
+    .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .description .part-description{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .planet img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .planet{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .planet .title{
+        font-size: 2.4rem;
+        background-color: #25995C;
+        padding: 10px;
+        width: 80%;
+        text-align: center;
+        margin-top: 0px;
+        border-radius: 10px;
+    }
+    .planet img{
+        width: 100%;
+    }
+
+    .description .title-description{
+        text-align: center;
+        background-color: #CDDA7E;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 0rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+    
+    }
+    .description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .description .part-description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .planet img{
+        width: 100%;
+    }
+}
