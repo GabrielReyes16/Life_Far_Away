@@ -5,5 +5,4 @@ urlpatterns = [
     path('planet', views.planet, name = "planet"),
     path('planet/data', views.data, name = "data"),
     path('our_exoplanet', views.our_exoplanet, name = "our_exoplanet"),
-   #  path('producto', views.producto, name = "producto"),
 ]

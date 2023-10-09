@@ -17,4 +17,10 @@ def data(request):
     return render(request, 'planet_data.html')
 
 def our_exoplanet(request):
-    return render(request, 'our_exoplanet.html')
+    name = "OGL-2023-1524L b"
+    exoplanet = planet.objects.get(name_planet = name)
+    context={ 
+        'exoplanet':exoplanet
+    }
+    return render(request,"our_exoplanet.html", context)
+
