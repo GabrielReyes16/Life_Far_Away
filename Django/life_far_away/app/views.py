@@ -15,3 +15,6 @@ def planet (request):
 
 def data(request):
     return render(request, 'planet_data.html')
+
+def our_exoplanet(request):
+    return render(request, 'our_exoplanet.html')
