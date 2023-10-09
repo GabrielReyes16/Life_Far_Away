@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .models import planet
 # Create your views here.
 def index(request):
-    return render(request, 'planet.html')
+    return render(request, 'index.html')
 
 def aplanet (request):
 # def planet (request,codigo):
