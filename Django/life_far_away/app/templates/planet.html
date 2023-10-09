@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="{% static 'css/app.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HERE GOES THE NAVBAR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row" >
+            <div class="col-2">
+            </div>
+            <div class="col-8">
+                <div class="py-1">
+                    <div class="card">
+                        <div class="card-body text-center">
+                        <h4 class="card-title card-title-name">TEEGARDEN B</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-2 row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">CATEGORY</h5>
+                            <button class="btn btn-warning btn-sm"><p class="explanation">Category planet</p></button>
+                            <p class="py-2 gap-1">
+                                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                                More info
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample1">
+                                <div class="card">
+                                    <p>Information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">ATMOSPHERE</h5>
+                          <button class="btn btn-warning btn-sm"><p class="explanation">3% chance of having an atmosphere</p></button>
+                            <p class="py-2 gap-1">
+                                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                                More info
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card">
+                                    <p>Information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 row">
+                <div>
+                    <img class="card-img-top img-fluid" src="/static/img/earth-2.gif" alt="">
+                </div>
+            </div>
+            <div class="col-2 row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">TYPE OF STAR</h5>
+                          <button class="btn btn-warning btn-sm"><p class="explanation">Red dwarf star</p></button>
+                            <p class="py-2 gap-1">
+                                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                                More info
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card">
+                                    <p>Information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                          <h5 class="card-title">WATER AVAILABILITY</h5>
+                          <button class="btn btn-warning btn-sm"><p class="explanation">60% chance of having liquid water</p></button>
+                            <p class="py-2 gap-1">
+                                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                                More info
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample4">
+                                <div class="card">
+                                    <p>Information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">SURFACE</h5>
+                      <button class="btn btn-warning btn-sm"><p class="explanation">60% chance of having an habitable surface temperature </p></button>
+                        <p class="py-2 gap-1">
+                            <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                            More info
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample5">
+                            <div class="card">
+                                <p>Information</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

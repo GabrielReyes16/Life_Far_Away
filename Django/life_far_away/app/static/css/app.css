@@ -1,0 +1,39 @@
+
+body {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.card {
+    background-color: #2c8c29;
+}
+
+#p {
+    font-size: smaller;
+}
+
+.card-title {
+    color: black;
+}
+
+.card-title-name {
+    color: antiquewhite;
+}
+  
+.explanation {
+    font-size: small;
+    font-weight: bold;
+}
+
+.content {
+    position: relative;
+  }
+  
+#collapseExample {
+    position: relative;
+    z-index: 1;
+}
+
+.btn-warning {
+    width: 100%;
+}
